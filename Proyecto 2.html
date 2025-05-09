@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta title="Proyecto 1">
+        <link rel="stylesheet" href="Proyecto 1 Estilo.css">
+        <style>
+
+            /* Estilos básicos */
+            
+            body {
+            
+            font-family: 'Times New Roman', Times, serif, sans-serif;
+            
+            }
+            
+            
+            /* Contenedor de la marquesina */
+            
+            #marquesina {
+            
+            width: 100%;
+            
+            background-color: #051950;
+            
+            color: white;
+            
+            font-size: 25px;
+            
+            text-align: center;
+            
+            padding: 30px;
+            
+            position: relative;
+            
+            overflow: hidden;
+            
+            }
+            
+            
+            /* Mensaje que se mueve */
+            
+            #mensaje {
+            
+            position: absolute;
+            
+            white-space: nowrap;
+            
+            animation: mover 10s linear infinite;
+            
+            }
+            
+            
+            /* Animación que mueve el mensaje de izquierda a derecha */
+            
+            @keyframes mover {
+            
+            from {
+            
+            left: 100%;
+            
+            }
+            
+            to {
+            
+            left: -100%;
+            
+            }
+            
+            }
+            
+            
+            body {
+            
+            background-color: #f0f8ff; /* Color suave de fondo */
+            
+            font-family: 'Times New Roman', Times, serif, sans-serif;
+            
+            text-align: center;
+            
+            margin: 0;
+            
+            padding: 0;
+            
+            }
+            
+            
+            /* Menú de navegación */
+            
+            nav {
+            
+            background-color: #238fce;
+            
+            padding: 15px;
+            
+            }
+            
+            
+            nav ul {
+            
+            list-style: none;
+            
+            display: flex;
+            
+            justify-content: center;
+            
+            }
+            
+            
+            nav ul li {
+            
+            margin: 0 20px;
+            
+            }
+            
+            
+            nav ul li a {
+            
+            color: rgb(244, 243, 243);
+            
+            text-decoration: none;
+            
+            font-weight: bold;
+            
+            transition: color 0.3s;
+            
+            }
+            
+            
+            nav ul li a:hover {
+            
+            color: #ffb703;
+            
+            }
+            
+            
+            header {
+            
+            background-color: #5a9b0f;
+            
+            color: white;
+            
+            padding: 20px;
+            
+            }
+            
+            .contenido {
+            
+            margin: 40px;
+            
+            }
+            
+            img {
+            
+            width: 600px;
+            
+            height: auto;
+            
+            border-radius: 10px;
+            
+            margin-top: 20px;
+            
+            }
+            
+            </style>
+
+    
+
+    </head>
+    <body> 
+        <!-- Contenedor de la Marquesina -->
+
+<div id="marquesina">
+
+    <div id="mensaje">Bienvenido al proyecto 1</div>
+    
+    </div>
+
+
+      <!-- Menú de navegación -->
+
+    <nav>
+
+    <ul>
+    
+    <li><a href="index.html">Inicio</a></li>
+    
+    <li><a href="Proyecto 2.html">Proyecto 1</a></li>
+    
+    <li><a href="Proyecto 1.html">Proyecto 2</a></li>
+    
+    <li><a href="#">Proyecto 3</a></li>
+    
+    </ul>
+    
+    </nav>
+</body>
+
+</html>
