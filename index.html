@@ -2,50 +2,50 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mi Portafolio</title>
   <style>
-    /* Asegurar que html y body no tengan márgenes */
-    html, body {
+    /* Reset básico */
+    * {
       margin: 0;
       padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
       width: 100%;
+      font-family: 'Times New Roman', Times, serif;
+      background-color: #f0f9ff;
+      color: #333;
     }
 
     body {
-      font-family: 'Times New Roman', Times, serif;
-      background-color: #f0f9ff;
       text-align: center;
     }
 
-    /* Header ocupa todo el ancho */
     header {
       background-color: #0f2b9b;
       color: white;
       padding: 20px;
-      width: 100%;
     }
 
-    /* Imagen dentro del header */
     header img {
-      width: 600px;
+      max-width: 100%;
       height: auto;
       border-radius: 10px;
       margin-top: 20px;
     }
 
     .contenido {
-      margin: 40px;
+      padding: 20px;
     }
 
-    /* Marquesina */
     #marquesina {
       width: 100%;
       background-color: #132b6d;
       color: white;
-      font-size: 25px;
-      text-align: center;
-      padding: 30px;
+      font-size: 1.2rem;
+      padding: 20px 0;
       position: relative;
       overflow: hidden;
     }
@@ -53,45 +53,52 @@
     #mensaje {
       position: absolute;
       white-space: nowrap;
-      animation: mover 10s linear infinite;
+      animation: mover 12s linear infinite;
     }
 
     @keyframes mover {
-      from {
-        left: 100%;
-      }
-      to {
-        left: -100%;
-      }
+      from { left: 100%; }
+      to { left: -100%; }
     }
 
-    /* Menú de navegación */
     nav {
       background-color: #39358d;
-      padding: 15px;
+      padding: 15px 0;
     }
 
     nav ul {
       list-style: none;
       display: flex;
+      flex-wrap: wrap;
       justify-content: center;
+      gap: 20px;
       margin: 0;
       padding: 0;
     }
 
-    nav ul li {
-      margin: 0 20px;
-    }
-
     nav ul li a {
-      color: rgb(244, 243, 243);
+      color: #f4f3f3;
       text-decoration: none;
       font-weight: bold;
       transition: color 0.3s;
+      padding: 8px 12px;
     }
 
     nav ul li a:hover {
       color: #ffb703;
+    }
+
+    /* Responsive text */
+    h1, h2, h3 {
+      margin-bottom: 15px;
+    }
+
+    /* Responsive container */
+    @media (min-width: 768px) {
+      .contenido {
+        max-width: 800px;
+        margin: auto;
+      }
     }
   </style>
 </head>
@@ -109,7 +116,7 @@
   <div class="contenido">
     <h2>Nombre del Alumno: José Antonio Vázquez Mendiola</h2>
     <h3>Campus: Lomas Verdes</h3>
-    <h3>Docentes: Prof. Patricia Hernandez Carrillo</h3>
+    <h3>Docente: Prof. Patricia Hernandez Carrillo</h3>
   </div>
 
   <nav>
