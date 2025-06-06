@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Video con Menú</title>
+    <link rel="stylesheet" href="videocss.css" />
+</head>
+<body>
+
+    <!-- Menú de navegación -->
+    <nav class="menu">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="Proyecto 2.html">Proyecto 1</a></li>
+            <li><a href="Proyecto 1.html">Proyecto 2</a></li>
+            <li><a href="#contacto">Proyecto 3</a></li>
+        </ul>
+    </nav>
+
+    <!-- Contenedor del video -->
+    <div class="video-container">
+        <video id="miVideo" width="640" height="360" controls>
+            <source src="MicrosoftTeams-video.mp4" type="video/mp4" />
+            Tu navegador no soporta la etiqueta de video.
+        </video>
+        <button id="playPauseBtn">Play/Pause</button>
+    </div>
+
+    <script src="videojs.js"></script>
+
+
+
+</body>
+</html>
